@@ -22,3 +22,6 @@ if resp == '1':
     print("Nmap  Version: ", scanner.nmap_version())
     scanner.scan(ip_addr, '1-1024', '-v -sS')
     print(scanner.scaninfo())
+    print("Ip Status: ", scanner[ip_addr].state())
+    print(scanner[ip_addr].all_protocols())
+    
