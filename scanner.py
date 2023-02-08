@@ -1,6 +1,3 @@
-# Installed nmap module with 
-#  pip install python-nmap
-
 import nmap
 
 nmap_path = [r"C:\Program Files (x86)\Nmap\nmap.exe",]
