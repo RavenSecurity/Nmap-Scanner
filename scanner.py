@@ -3,7 +3,9 @@
 
 import nmap
 
-scanner = nmap.PortScanner()
+nmap_path = r"C:\Program Files (x86)\Nmap\nmap.exe"
+nmap.PortScanner(nmap_search_path = nmap_path)
+
 
 print("Welcome, this is a simple nmap automation tool")
 print("<----------------------------------------------------")
