@@ -5,6 +5,16 @@ scanner = nmap.PortScanner(nmap_search_path=nmap_path)
 
 print("\n")
 
+print("""                              
+  ____   _____ _____  ______  
+ /    \ /     \\__  \ \____ \ 
+|   |  \  Y Y  \/ __ \|  |_> >
+|___|  /__|_|  (____  /   __/ 
+     \/      \/     \/|__|     """)
+
+print("\n")
+
+
 print("<----------------------------------------------------")
 print("Welcome to Nmap", scanner.nmap_version(), "cli tool")
 print("<----------------------------------------------------")
