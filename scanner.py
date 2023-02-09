@@ -3,8 +3,8 @@ import nmap
 nmap_path = [r"C:\Program Files (x86)\Nmap\nmap.exe",]
 scanner = nmap.PortScanner(nmap_search_path=nmap_path)
 
-
-print("Welcome, this is a simple nmap automation tool")
+print("<----------------------------------------------------")
+print("Welcome to Nmap", scanner.nmap_version(), "cli tool")
 print("<----------------------------------------------------")
 
 ip_addr = input("Please enter the IP address you want to scan: ")
