@@ -3,9 +3,13 @@ import nmap
 nmap_path = [r"C:\Program Files (x86)\Nmap\nmap.exe",]
 scanner = nmap.PortScanner(nmap_search_path=nmap_path)
 
+print("\n")
+
 print("<----------------------------------------------------")
 print("Welcome to Nmap", scanner.nmap_version(), "cli tool")
 print("<----------------------------------------------------")
+
+print("\n")
 
 ip_addr = input("Please enter the IP address you want to scan: ")
 print("The IP you entered is: ", ip_addr)
@@ -16,6 +20,9 @@ resp = input("""\nPlease enter the type of scan you want to run
                 2)UDP Scan
                 3)Comprehensive Scan \n""")
 print("You have selected option: ", resp)
+
+print("\n")
+
 
 if resp == '1':
     scanner.scan(ip_addr, '1-1024', '-v -sS')
