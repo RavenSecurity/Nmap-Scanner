@@ -18,7 +18,7 @@ ip_addr = input("Please enter the IP address you want to scan: ")
 type(ip_addr)
 
 resp = input("""\nPlease enter the type of scan you want to run
-                1)TCP Syn Scan
+                1)TCP Syn (Stealth) Scan
                 2)UDP Scan
                 3)Comprehensive Scan \n""")
 
