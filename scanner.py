@@ -18,9 +18,12 @@ ip_addr = input("Please enter the IP address you want to scan: ")
 type(ip_addr)
 
 resp = input("""\nPlease enter the type of scan you want to run
-                1)TCP Syn (Stealth) Scan
-                2)UDP Scan
-                3)Comprehensive Scan \n""")
+                1) TCP Syn (Stealth) Scan
+                2) TCP ACK scan
+                3) TCP connect scan
+                4) UDP Scan
+                5) IP protocol scan
+                6) Comprehensive Scan \n""")
 
 print("\n")
 
