@@ -34,14 +34,19 @@ if resp == '1':
     print("Ip Status: ", scanner[ip_addr].state())
     print("Open Ports: ", scanner[ip_addr]['tcp'].keys())
 elif resp == '2' :
+    scanner.scan(ip_addr, '1-1024', '-v -sA')
+    print(scanner.scaninfo())
+    print("Ip Status: ", scanner[ip_addr].state())
+    print("Open Ports: ", scanner[ip_addr]['tcp'].keys())
+elif resp == '3' :
     scanner.scan(ip_addr, '1-1024', '-v -sU')
     print(scanner.scaninfo())
     print("Ip Status: ", scanner[ip_addr].state())
     print("Open Ports: ", scanner[ip_addr]['udp'].keys())
-elif resp == '3' :
+elif resp == '4' :
     scanner.scan(ip_addr, '1-1024', '-v -sS -sV -sC -A -O')
     print(scanner.scaninfo())
     print("Ip Status: ", scanner[ip_addr].state())
     print("Open Ports: ", scanner[ip_addr]['tcp'].keys())
-elif resp >= '4':
+elif resp >= '5':
     print("Please enter a valid option")
