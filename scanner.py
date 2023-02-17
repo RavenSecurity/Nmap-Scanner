@@ -50,3 +50,8 @@ elif resp == '4' :
     print("Open Ports: ", scanner[ip_addr]['tcp'].keys())
 elif resp >= '5':
     print("Please enter a valid option")
+
+# I've fixed this issue in the beginning but it came back after the TCP ACK update:
+# nmap.nmap.PortScannerError: 'nmap program was not found in path. PATH 
+# What I tried to resolve the issue:
+# - sudo apt install nmap
